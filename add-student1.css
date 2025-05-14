@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #6c2bd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 1100px;
+    overflow: hidden;
+  }
+  
+  .illustration {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f6ff;
+    padding: 40px;
+  }
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: #6c2bd9;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s ease;
+  }
+  
+  .back-button img {
+    width: 18px;
+    height: 18px;
+    /* Remove filter if your SVG has built-in color */
+    /* filter: brightness(0) invert(1); */
+  }
+  
+  .back-button:hover {
+    background-color: #551fb3;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 60px 40px;
+    position: relative;
+  }
+  
+  .form-toggle {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  #toggleButton {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  #formTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #888;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+  }
+  
+  .btn {
+    width: 100%;
+    background: #6c2bd9;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .google-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .google-icon {
+    background: white;
+    color: #4285f4;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .google-icon-img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Hide number input spinner (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinner (Firefox) */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.back-to-main {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: #6c2bd9;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.back-to-main img {
+    width: 18px;
+    height: 18px;
+}

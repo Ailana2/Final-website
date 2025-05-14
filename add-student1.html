@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Student</title>
+  <link rel="stylesheet" href="add-student1.css" />
+</head>
+<body>      
+  <div class="container">
+    <div class="illustration">
+      <button class="back-button">
+        <img src="pictures/Group_75.svg" alt="Back" />
+      </button>
+      <img src="pictures/—Pngtree—landing page builder isometric style_15608530 (1) 1.svg" alt="Illustration" />
+    </div>
+    <div class="form-section">        
+      <form id="authForm">
+        <h2 id="formTitle">Add student</h2>
+      
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Student name" required />
+        </div>
+      
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="student@example.com" required />
+        </div>
+      
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Math" required />
+        </div>
+      
+        <div class="input-group">
+          <label for="quiz">Quiz</label>
+          <input type="number" id="quiz" min="0" max="100" placeholder="Quiz Score" required />
+        </div>
+      
+        <div class="input-group">
+          <label for="midterm1">Midterm 1</label>
+          <input type="number" id="midterm1" min="0" max="100" placeholder="Midterm 1 Score" required />
+        </div>
+      
+        <div class="input-group">
+          <label for="midterm2">Midterm 2</label>
+          <input type="number" id="midterm2" min="0" max="100" placeholder="Midterm 2 Score" required />
+        </div>
+      
+        <button type="submit" class="btn">Add</button>
+      </form>
+      
+    </div>
+  </div>
+  <script src="add-student1.js"></script>
+</body>
+</html>

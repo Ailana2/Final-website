@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="illustration">
+      <button class="back-button">
+        <img src="pictures/Group_75.svg" alt="Back" />
+      </button>
+      <img src="pictures/—Pngtree—landing page builder isometric style_15608530 (1) 1.svg" alt="Illustration" />
+    </div>
+    <div class="form-section">        
+      <div class="form-toggle">
+        <span id="toggleText">Already have an account?</span>
+        <button id="toggleButton">SIGN UP</button>
+      </div>
+      <form id="authForm">
+        <h2 id="formTitle">Welcome to your website!</h2>
+        <p class="subtitle">Register your account</p>
+        <div id="nameField" class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+        <div id="emailField" class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </div>        
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn">Log In</button>
+        <p class="google-text">
+            Create account with 
+            <img src="pictures/Group 44.svg" alt="Google" class="google-icon-img" />
+          </p>          
+      </form>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

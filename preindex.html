@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prestylee.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <section class="page1">
+        <header>
+            <div class="logo"><img src="pictures/Group 74.png" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="nav-link" data-target="students">Students</a></li>
+                    <li><a href="#" class="nav-link" data-target="subjects">Subjects</a></li>
+                    <li><a href="#" class="nav-link" data-target="grades">Grades</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="log-in">Log In</button> <!-- added id="loginBtn" -->
+            </div>            
+        </header>
+        
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Student Progress Tracker</h1>
+                <p>Welcome to your website! Here you will be aware about your grades and academic performance. Sign up or keep on with Google account.</p>
+                <div class="buttons">
+                    <button id="getStartedBtn" class="get-started">Get Started</button>
+                    <button class="learn-more">Learn More</button>
+                </div>
+        </section>
+    </section>
+    
+<!-- Students Section -->
+    <section class="page2" id="students">
+        <img src="pictures/vecteezy_3d-character-college-student-with-graduation-hat-book-and_28239629 1.svg" class="Page2ndElement" alt="Page2ndElement">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                  <a href="studentpage.html?id=14422933">
+                    <img src="pictures/AilanaCard.svg" alt="AilanaCard">
+                  </a>
+                </div>
+                <div class="slide">
+                    <a href="studentpage.html?id=14422932">
+                        <img src="pictures/NursCard.svg" alt="NursCard">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="studentpage.html?id=14422931">
+                      <img src="pictures/DiasCard.svg" alt="DiasCard">
+                    </a>
+                  </div>                  
+                <div class="slide">
+                  <a href="studentpage.html?id=14422934">
+                    <img src="pictures/ZhaniyeCard.svg" alt="ZhaniyeCard">
+                  </a>
+                </div>
+    
+                <!-- Duplicate images for seamless looping -->
+                <div class="slide">
+                  <a href="studentpage.html?id=14422933">
+                    <img src="pictures/AilanaCard.svg" alt="AilanaCard">
+                  </a>
+                </div>
+                <div class="slide">
+                    <a href="studentpage.html?id=14422932">
+                        <img src="pictures/NursCard.svg" alt="NursCard">
+                    </a>
+                </div>
+                <div class="slide">
+                    <a href="studentpage.html?id=14422931">
+                      <img src="pictures/DiasCard.svg" alt="DiasCard">
+                    </a>
+                  </div>                  
+                <div class="slide">
+                  <a href="studentpage.html?id=14422934">
+                    <img src="pictures/ZhaniyeCard.svg" alt="ZhaniyeCard">
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="add-button-container">
+            <button id="addStudentBtn"class="add-button">Add</button>
+        </div>
+        
+    </section>    
+
+    <!--THIRD PAGE-->
+    <section class="page3" id="subjects">
+        <div class="bar-container">
+      
+          <!-- Subject 1 -->
+          <div class="bar subject1" style="background-color: #ffd6dc;">
+            <div class="bar-title">Mechanics</div>
+            <div class="bar-subtitle">Motion, forces, and energy study</div>
+            <div class="bar-info">
+              <span class="left">25 students</span>
+              <span class="right">17% failed</span>
+            </div>
+            <div class="liquid">
+              <div class="water-wave water-wave1"></div>
+              <div class="water-wave water-wave2"></div>
+              <div class="water-wave water-wave3"></div>
+            </div>
+          </div>
+      
+          <!-- Subject 2 -->
+          <div class="bar subject2" style="background-color: #fde9d2;">
+            <div class="bar-title">Thermodynamics</div>
+            <div class="bar-subtitle">Heat, energy, and work</div>
+            <div class="bar-info">
+              <span class="left">25 students</span>
+              <span class="right">57% failed</span>
+            </div>
+            <div class="liquid">
+              <div class="water-wave water-wave1"></div>
+              <div class="water-wave water-wave2"></div>
+              <div class="water-wave water-wave3"></div>
+            </div>
+          </div>
+      
+          <!-- Subject 3 -->
+          <div class="bar subject3" style="background-color: #aff8ff;">
+            <div class="bar-title">Optics</div>
+            <div class="bar-subtitle">Light behavior and interaction study</div>
+            <div class="bar-info">
+              <span class="left">25 students</span>
+              <span class="right">30% failed</span>
+            </div>
+            <div class="liquid">
+              <div class="water-wave water-wave1"></div>
+              <div class="water-wave water-wave2"></div>
+              <div class="water-wave water-wave3"></div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    <!--FOURTH PAGE-->
+    <!-- Grades Section -->
+    <section class="page4" id="grades">
+    </section>
+    <!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2 class="footer-title">Student Progress<br>Tracker</h2>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <strong>Home</strong>
+                    <a href="learn-more.html" style="text-decoration: none; color: black;">
+                      <p>About Us</p>
+                    </a>
+                    
+                </div>
+                <div class="footer-column">
+                    <strong>Students</strong>
+                    <p>Student 1</p>
+                    <p>Student 2</p>
+                </div>
+                <div class="footer-column">
+                    <strong>Subjects</strong>
+                    <p>Subject 1</p>
+                    <p>Subject 2</p>
+                </div>
+                <div class="footer-column">
+                    <strong>Grades</strong>
+                    <p>Grade 1</p>
+                    <p>Grade 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p><strong>contact@gmail.com</strong><br><strong>+777 777 77 77</strong></p>
+          </div>
+          
+          <div class="footer-bottom">
+            <p><strong>All rights reserved ©</strong></p>
+            <button onclick="scrollToTop()" class="scroll-top-icon">
+                <img src="pictures/Arrow 1.svg" alt="Top" />
+            </button>
+        </div>                   
+          </div>          
+    </div>
+</footer> 
+<script src="main.js"></script>
+</body>
+</html>

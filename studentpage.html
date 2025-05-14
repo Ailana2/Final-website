@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Progress</title>
+  <link rel="stylesheet" href="studentpage.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button id="backButton" class="back-button">&#8592;</button>
+      <h1>Progress</h1>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 0%;"></div>
+      </div>
+      <span class="progress-text">0%</span>
+    </div>
+
+    <div class="student-info">
+      <img id="studentImage" alt="Student Photo" class="student-photo">
+      <div class="student-details">
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>ID number:</strong> <span id="id"></span></p>
+        <p><strong>Grade and section:</strong> <span id="grade"></span></p>
+      </div>
+    </div>
+
+<!-- Subject Cards Wrapper (NEW) -->
+<div class="subject-cards">
+  <div class="subject-card" data-subject="mechanics">
+    <img src="pictures/Mecha.svg" alt="Mechanics">
+    <h3>Mechanics</h3>
+    <p class="status">Excellent</p>
+  </div>
+  
+  <div class="subject-card" data-subject="Thermodynamics">
+    <img src="pictures/Thermo.svg" alt="Thermodynamics">
+    <h3>Thermodynamics</h3>
+    <p class="status">Excellent</p>
+  </div>
+  
+  <div class="subject-card" data-subject="optics">
+    <img src="pictures/Opt.svg" alt="Optics">
+    <h3>Optics</h3>
+    <p class="status">Excellent</p>
+  </div>
+</div>
+   
+    <div class="quiz-table">
+      <h2>Grades</h2>
+      <table class="quiz-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Quiz</th>
+            <th>Midterm 1</th>
+            <th>Midterm 2</th>
+            <th>total</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data rows will go here -->
+        </tbody>
+      </table>
+      
+      </table>
+    </div>    
+    </div>
+  </div>
+
+  <div class="feedback-section">
+    <h2>📝 Feedback for Student</h2>
+    <textarea id="feedbackInput" placeholder="Write your feedback here..."></textarea>
+    <button onclick="submitFeedback()">Submit Feedback</button>
+    <p id="feedbackMessage" class="hidden">✔️ Feedback submitted!</p>
+  </div>
+
+  <script src="studentpage.js"></script>
+</body>
+</html>

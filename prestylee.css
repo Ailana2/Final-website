@@ -1,0 +1,587 @@
+/*smooth scrolling behavior with CSS*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logo positioned at the left top */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+}
+
+.logo img {
+  width: 100px; /* Adjust size */
+  height: auto;
+}
+
+/* Navigation centered between logo and buttons */
+nav {
+  position: absolute;
+  top: 40px; /* Reduced from 60px */
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #6a0dad; /* Purple hover effect */
+}
+
+/* Buttons positioned at the right top */
+.auth-buttons {
+  position: absolute;
+  top: 30px; /* Reduced from 50px */
+  right: 200px;
+}
+
+.auth-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-up {
+  background-color: white;
+  border: 2px solid #6a0dad;
+  color: black;
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 10px 30px; /* Adjust width to make it more rectangular */
+}
+
+.log-in {
+  background-color: #6a0dad;
+  color: white;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  
+}
+
+.hero-text {
+  max-width: 50%;
+  margin-left: 150px; /* Adjust this value as needed */
+  margin-top: -5px;
+}
+
+.hero-text h1 {
+  font-size: 4.5em;
+  color: black;
+  max-width: 700px;
+  word-wrap: break-word;
+  margin-bottom: 5px; /* Reduce space below h1 */
+}
+
+.hero-text p {
+  color: gray;
+  margin-top: 5px; /* Reduce space above p */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px; /* Adds space between buttons */
+}
+
+.buttons button {
+  padding: 15px 40px; /* Increase padding for a larger button */
+  border-radius: 45px; /* Keep rounded corners */
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: center;
+  display: inline-block;
+  min-width: 160px; /* Ensures a wider button */
+}
+
+.get-started {
+  background-color: black;
+  color: white;
+}
+
+.learn-more {
+  background-color: white;
+  border: 2px solid #6a0dad;
+  color: #6a0dad;
+}
+
+.hero-image img {
+  width: 100%; /* Fills the entire container */
+  max-width: none; /* Removes any width limit */
+  height: auto;
+  display: block;
+}
+
+.page1 {
+  height: 100vh; /* Full screen height */
+  background: url('pictures/home.svg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.page2 {
+  height: 100vh; /* Full-screen height */
+  background: url('pictures/page2ndelement.svg') no-repeat center center ;
+  background-size: cover; /* Ensures it fills the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative
+}
+
+/* Slider Container */
+.slider {
+  width: 100vw; /* Full width of viewport */
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Moving Track */
+.slide-track {
+  display: flex;
+  width: 200%; /* Ensures seamless looping */
+  animation: scroll 10s linear infinite; /* Adjust speed */
+}
+
+/* Individual Slide */
+.slide {
+  flex: 0 0 auto;
+  width: 25vw; /* Each image takes 25% of screen width (4 images in a row) */
+}
+
+/* Ensuring Images Fill Space */
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Animation for infinite horizontal scrolling */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves half the track to create seamless loop */
+}
+
+/*students page add button*/
+.page2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure section fills the viewport height */
+  flex-direction: column;
+}
+
+.add-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-button {
+  background-color: #6D28D9;
+  color: white;
+  padding: 20px 50px; /* Bigger button */
+  border: none;
+  border-radius: 30px;
+  font-size: 24px; /* Bigger text */
+  font-weight: bold; /* Optional: make text bold */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #5a22b3;
+}
+
+.page3 {
+  height: 115vh;
+  background: url('pictures/page3.svg') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+.page2 {
+  position: relative; /* Important */
+  height: 100vh;
+  background: url('pictures/students2page.svg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Page2ndElement {
+  position: absolute;
+  top: -50px;
+  right: -70px;
+  width: 350px;
+  height: auto;
+  animation: floatUpDown 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* THIRD PAGE*/
+/* Page 3 - Subject Bars */
+.bar-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.bar {
+  position: relative;
+  width: 270px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 18px;
+  padding: 30px 20px 0 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.bar-title {
+  font-size: 1.2em; /* Reduced from previous size */
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.bar-subtitle {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.bar-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.liquid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 0 0 18px 18px;
+  animation: water-waves linear infinite;
+}
+
+.water-wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-radius: 40%;
+  animation: inherit;
+}
+.bar .subject1{
+  background: #333 !important;
+}
+/* Mechanics water waves - 43% filled */
+.subject1 .water-wave1 {
+  top: 57%;
+  left: -25%;
+  background: #FFC1C9;
+  opacity: 0.7;
+  animation-duration: 5s;
+}
+
+.subject1 .water-wave2 {
+  top: 62%;
+  left: -35%;
+  background: #FD8F9C;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject1 .water-wave3 {
+  top: 67%;
+  left: -35%;
+  background: #FD8F9C;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+/* Thermodynamics water waves - 60% filled */
+.subject2 .water-wave1 {
+  top: 40%;
+  left: -25%;
+  background: #FBDFC1;
+  opacity: 0.7;
+  animation-duration: 5s;
+}
+
+.subject2 .water-wave2 {
+  top: 45%;
+  left: -35%;
+  background: #F9B578;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject2 .water-wave3 {
+  top: 50%;
+  left: -35%;
+  background: #F9B578;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+/* Optics water waves - 67% filled */
+.subject3 .water-wave1 {
+  top: 33%;
+  left: -25%;
+  background: #88F5FF;
+  opacity: 0.7;
+  animation-duration: 5s;
+}
+
+.subject3 .water-wave2 {
+  top: 38%;
+  left: -35%;
+  background: #3FE3F2;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.subject3 .water-wave3 {
+  top: 43%;
+  left: -35%;
+  background: #3FE3F2;
+  opacity: 0.3;
+  animation-duration: 11s;
+}
+
+@keyframes water-waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*PAGE 4*/
+.page4 {
+height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
+background: url('pictures/GRADES.svg') no-repeat center center;
+background-size: contain; /* Keeps full image visible */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*FOOTER*/  
+.bar-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.bar-footer .left {
+  color: #333;
+}
+
+.bar-footer .right {
+  color: #c0392b;
+}
+
+.site-footer {
+  background-color: rgba(192, 132, 252, 0.3);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 100px 100px; /* left and right margin */
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  color: #6D28D9;
+  font-size: 64px; /* or your desired size */
+  font-weight: bold;
+  line-height: 1.1; /* ⬅️ Lower value = tighter line spacing */
+  margin-bottom: 1rem; /* optional spacing below */
+  margin-top: 0;
+  padding-top: 10px;
+  position: relative;
+  top: -50px; /* move it up */
+}  
+
+
+.footer-nav {
+  display: flex;
+  gap: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  font-weight: 300;
+}
+
+.footer-column strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px; /* space between rights text and button */
+  padding: 0 40px 40px 0;
+}
+
+.footer-right p {
+  display: block;        /* Stack vertically */
+  font-weight: bold;     /* Make bold */
+  margin: 4px 0;          /* Optional: small spacing between lines */
+}
+
+.footer-right p:last-child {
+  margin: 0;
+  font-size: 14px;
+}
+
+.scroll-top-icon {
+  position: static;
+  bottom: 60px;
+  right: 60px;
+  background-color: #6D28D9;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 250px;
+} 
+
+.scroll-top-icon img {
+  width: 20px;
+  height: 20px;
+}  
+
+.scroll-top-icon:hover {
+  background-color: #FFCE6A;
+}
+
+.footer-bottom-bar {
+  position: fixed;
+  bottom: 70px;
+  right: 140px; /* distance from edge */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  z-index: 999;
+}
+
+.footer-nav strong,
+.footer-nav p {
+transition: color 0.3s ease;
+cursor: pointer;
+}
+
+.footer-nav strong:hover,
+.footer-nav p:hover {
+color: #6D28D9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}

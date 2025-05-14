@@ -1,0 +1,194 @@
+/* Ensure no scrolling and full-page layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f3ff;
+}
+
+/* Make sure the body content doesn't overflow */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Profile Image */
+.profile-img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-right: 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Content */
+.profile-content {
+    flex: 1;
+}
+
+.profile-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2d2d2d;
+}
+
+.profile-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.profile-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-content p strong {
+    color: #000;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Background */
+.BackTeacherPage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* Background elements */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+/* Background */
+.BackTeacherPage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Set background behind other content */
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* Book */
+.book {
+    position: absolute;
+    top: 10%;  /* Move it closer to the top */
+    right: 5%; /* Position it closer to the right side */
+    width: 200px;  /* Increase the width to make the book bigger */
+    z-index: 3;  /* Ensure the book is above the background and profile card */
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 100%;
+    position: relative;
+    z-index: 2; /* Keep the profile card behind the book */
+    overflow: hidden;
+}
+
+
+.star {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    width: 150px;
+    z-index: 100;
+    animation: bounce 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-15px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto 20px;
+    }
+
+    .book {
+        width: 70px;
+    }
+
+    .star {
+        width: 50px;
+    }
+}
