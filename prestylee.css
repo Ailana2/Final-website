@@ -428,12 +428,32 @@ nav ul li a:hover {
 }
 /*PAGE 4*/
 .page4 {
-height: 115vh; /* Limits height to 80% of viewport but not more than 600px */
-background: url('pictures/GRADES.svg') no-repeat center center;
-background-size: contain; /* Keeps full image visible */
-display: flex;
-justify-content: center;
-align-items: center;
+height: 115vh;
+  background: url('pictures/gradesbg.svg') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+}
+
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* or a fixed height like 300px */
+  width: 100%;
+  position: absolute; /* if you want it absolutely centered inside page4 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*FOOTER*/  
