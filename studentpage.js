@@ -128,3 +128,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function submitFeedback() {
+  const feedbackInput = document.getElementById('feedbackInput');
+  const feedbackMessage = document.getElementById('feedbackMessage');
+  
+  if (feedbackInput.value.trim() === '') {
+    alert('Please enter some feedback before submitting.');
+    return;
+  }
+  
+  // Here you would typically send the feedback to a server
+  // For now, we'll just show the success message
+  feedbackMessage.classList.remove('hidden');
+  feedbackInput.value = ''; // Clear the input
+  
+  // Hide the success message after 3 seconds
+  setTimeout(() => {
+    feedbackMessage.classList.add('hidden');
+  }, 3000);
+}

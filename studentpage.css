@@ -137,12 +137,18 @@ body {
 
 #feedbackMessage {
   margin-top: 10px;
-  color: green;
+  color: #2e7d32;
   font-weight: bold;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
 .hidden {
   display: none;
+  opacity: 0;
 }
 
 .quiz-table {
