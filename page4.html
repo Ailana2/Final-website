@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Materials - Page 4</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .page4 {
+      height: 100vh;
+      background: url('pictures/granum4.svg') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper {
+      width: 700px;
+      height: 450px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      color: #000;
+    }
+
+    .card1 {
+      background: #CE9DFF;
+    }
+
+    .card2 {
+      background: #F9D8CC;
+    }
+
+    .card3 {
+      background: #F5D5FF;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #4E1C9C;
+      margin: 0;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 170px;
+      left: 300px;
+      background-color: #6c2bd9;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s ease;
+    }
+  
+      .back-button img {
+        width: 18px;
+        height: 18px;
+      }
+  </style>
+</head>
+<body>
+  <section class="page4">
+    <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+
+    <a href="grades.html" class="swiper-slide card1">
+      <div class="header">
+        <img src="pictures/Mecha.svg" alt="Avatar" class="avatar">
+        <h1>Mechanics</h1>
+      </div>
+      <h2>15/25 students passed</h2>
+    </a>
+
+    <a href="grades.html" class="swiper-slide card2">
+      <div class="header">
+        <img src="pictures/Thermo.svg" alt="Avatar" class="avatar">
+        <h1>Thermodynamics</h1>
+      </div>
+      <h2>20/25 students passed</h2>
+    </a>
+
+    <a href="grades.html" class="swiper-slide card3">
+      <div class="header">
+        <img src="pictures/Opt.svg" alt="Avatar" class="avatar">
+        <h1>Optics</h1>
+      </div>
+      <h2>23/25 students passed</h2>
+    </a>
+
+  </div>
+</div>
+
+  </section>
+  <button class="back-button">
+    <img src="pictures/Group_75.svg" alt="Back" />
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+
+      document.querySelector('.back-button').addEventListener('click', () => {
+        history.back();
+      });
+  </script>
+</body>
+</html>
