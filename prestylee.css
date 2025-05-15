@@ -150,7 +150,7 @@ nav ul li a:hover {
 
 .page1 {
   height: 100vh; /* Full screen height */
-  background: url('pictures/home.svg') no-repeat center center;
+  background: url('pictures/homenew.svg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -234,21 +234,20 @@ nav ul li a:hover {
 }
 
 .page3 {
-  height: 115vh;
-  background: url('pictures/page3.svg') no-repeat center center;
-  background-size: contain;
+  position: relative; 
+  height: 100vh;
+  background: url('pictures/page3!.svg') no-repeat center center;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  position: relative;
+  overflow: hidden;
 }
 
 .page2 {
-  position: relative; /* Important */
+  position: relative; 
   height: 100vh;
-  background: url('pictures/students2page.svg') no-repeat center center;
+  background: url('pictures/students2!.svg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -277,7 +276,7 @@ nav ul li a:hover {
 .bar-container {
   display: flex;
   gap: 40px;
-  margin-top: 220px;
+  margin-top: 100px;
   position: relative;
   z-index: 1;
 }
@@ -319,7 +318,7 @@ nav ul li a:hover {
   padding: 0 10px;
   font-size: 16px;
   color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .liquid {
@@ -427,16 +426,16 @@ nav ul li a:hover {
   }
 }
 /*PAGE 4*/
+
 .page4 {
-height: 115vh;
+  position: relative; 
+  height: 100vh;
   background: url('pictures/gradesbg.svg') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  position: relative;
+  overflow: hidden;
 }
 
 .centered-image {
