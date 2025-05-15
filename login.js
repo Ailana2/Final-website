@@ -27,35 +27,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  authForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+authForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const email = document.getElementById("email").value.trim();
+  const name = document.getElementById("name").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const email = document.getElementById("email").value.trim();
 
-    if (!name || !password || (!isLogin && emailField.style.display !== "none" && !email)) {
-      alert("❌ Please fill in all fields.");
+  if (!name || !password || (!isLogin && emailField.style.display !== "none" && !email)) {
+    alert("❌ Please fill in all fields.");
+    return;
+  }
+
+  if (isLogin) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+      alert("❌ Please enter a valid email address.");
       return;
     }
+  }
 
-    if (isLogin) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/;
+  if (password.length < 6) {
+    alert("❌ Password must be at least 6 characters.");
+    return;
+  }
 
-      if (!emailRegex.test(email)) {
-        alert("❌ Please enter a valid email address.");
-        return;
-      }
-    }
+  // Just alert success here, no redirect
+  alert("✅ Form submitted successfully!");
+});
 
-    if (password.length < 6) {
-      alert("❌ Password must be at least 6 characters.");
-      return;
-    }
-
-    // Redirect to teacher profile page
-    window.location.href = "/Users/ailananariman/final project/welcome page/index.html";
-  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {

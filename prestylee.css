@@ -519,26 +519,6 @@ height: 115vh;
   font-weight: 600;
 }
 
-.footer-right {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 16px; /* space between rights text and button */
-  padding: 0 40px 40px 0;
-}
-
-.footer-right p {
-  display: block;        /* Stack vertically */
-  font-weight: bold;     /* Make bold */
-  margin: 4px 0;          /* Optional: small spacing between lines */
-}
-
-.footer-right p:last-child {
-  margin: 0;
-  font-size: 14px;
-}
-
 .scroll-top-icon {
   position: static;
   bottom: 60px;
