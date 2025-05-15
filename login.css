@@ -59,8 +59,6 @@
   .back-button img {
     width: 18px;
     height: 18px;
-    /* Remove filter if your SVG has built-in color */
-    /* filter: brightness(0) invert(1); */
   }
   
   .back-button:hover {

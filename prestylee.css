@@ -18,7 +18,7 @@ header {
   position: relative;
 }
 
-/* Logo positioned at the left top */
+
 .logo {
   position: absolute;
   top: 30px;
@@ -26,14 +26,14 @@ header {
 }
 
 .logo img {
-  width: 100px; /* Adjust size */
+  width: 100px; 
   height: auto;
 }
 
-/* Navigation centered between logo and buttons */
+
 nav {
   position: absolute;
-  top: 40px; /* Reduced from 60px */
+  top: 40px; 
   left: 40%;
   transform: translateX(-50%);
 }
@@ -54,13 +54,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #6a0dad; /* Purple hover effect */
+  color: #6a0dad; 
 }
 
-/* Buttons positioned at the right top */
+
 .auth-buttons {
   position: absolute;
-  top: 30px; /* Reduced from 50px */
+  top: 30px; 
   right: 200px;
 }
 
@@ -78,7 +78,7 @@ nav ul li a:hover {
   color: black;
   font-weight: bold;
   border-radius: 45px;
-  padding: 10px 30px; /* Adjust width to make it more rectangular */
+  padding: 10px 30px; 
 }
 
 .log-in {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 .hero-text {
   max-width: 50%;
-  margin-left: 150px; /* Adjust this value as needed */
+  margin-left: 150px; 
   margin-top: -5px;
 }
 
@@ -106,22 +106,22 @@ nav ul li a:hover {
   color: black;
   max-width: 700px;
   word-wrap: break-word;
-  margin-bottom: 5px; /* Reduce space below h1 */
+  margin-bottom: 5px; 
 }
 
 .hero-text p {
   color: gray;
-  margin-top: 5px; /* Reduce space above p */
+  margin-top: 5px; 
 }
 
 .buttons {
   display: flex;
-  gap: 20px; /* Adds space between buttons */
+  gap: 20px; 
 }
 
 .buttons button {
-  padding: 15px 40px; /* Increase padding for a larger button */
-  border-radius: 45px; /* Keep rounded corners */
+  padding: 15px 40px; 
+  border-radius: 45px;
   cursor: pointer;
   margin-top: 10px;
   font-size: 1em;
@@ -166,7 +166,7 @@ nav ul li a:hover {
   position: relative
 }
 
-/* Slider Container */
+
 .slider {
   width: 100vw; /* Full width of viewport */
   overflow: hidden;
@@ -174,33 +174,30 @@ nav ul li a:hover {
   white-space: nowrap;
 }
 
-/* Moving Track */
 .slide-track {
   display: flex;
   width: 200%; /* Ensures seamless looping */
   animation: scroll 10s linear infinite; /* Adjust speed */
 }
 
-/* Individual Slide */
 .slide {
   flex: 0 0 auto;
-  width: 25vw; /* Each image takes 25% of screen width (4 images in a row) */
+  width: 25vw; 
 }
 
-/* Ensuring Images Fill Space */
+
 .slide img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Animation for infinite horizontal scrolling */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Moves half the track to create seamless loop */
+  100% { transform: translateX(-50%); } 
 }
 
-/*students page add button*/
+
 .page2 {
   position: relative;
   display: flex;

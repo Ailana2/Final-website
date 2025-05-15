@@ -53,7 +53,7 @@ authForm.addEventListener("submit", function (e) {
     return;
   }
 
-  // Just alert success here, no redirect
+
   alert("✅ Form submitted successfully!");
 });
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (backButton) {
       backButton.addEventListener("click", function (event) {
           event.preventDefault();
-          window.history.back(); // This will go back to the previous page
+          window.history.back(); 
       });
   }
 });

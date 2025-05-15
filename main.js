@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ✨ NEW: Login button
+
     const loginBtn = document.getElementById("loginBtn");
     if (loginBtn) {
         loginBtn.addEventListener("click", function () {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Smooth scroll to top
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -39,7 +39,7 @@ function scrollToTop() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Existing code...
+    
 
     const addStudentBtn = document.getElementById("addStudentBtn");
     if (addStudentBtn) {
@@ -48,13 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Other buttons like learn-more, get-started, back, etc...
+    
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Existing code...
-  
-    // Navigation scroll to sections
+
+
     const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
       link.addEventListener("click", function (event) {

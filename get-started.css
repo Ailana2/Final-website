@@ -1,14 +1,14 @@
-/* Ensure no scrolling and full-page layout */
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden; 
     font-family: 'Segoe UI', sans-serif;
     background-color: #f5f3ff;
 }
 
-/* Make sure the body content doesn't overflow */
+
 body {
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* Profile Wrapper */
+
 .profile-wrapper {
     display: flex;
     justify-content: center;
@@ -25,10 +25,10 @@ body {
     min-height: 100%;
     position: relative;
     z-index: 2;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden; 
 }
 
-/* Profile Card */
+
 .profile-card {
     display: flex;
     background: white;
@@ -38,10 +38,10 @@ body {
     max-width: 1000px;
     width: 100%;
     z-index: 2;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden; 
 }
 
-/* Profile Image */
+
 .profile-img {
     width: 280px;
     height: 350px;
@@ -51,7 +51,7 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Content */
+
 .profile-content {
     flex: 1;
 }
@@ -80,7 +80,6 @@ body {
     color: #000;
 }
 
-/* Back Button */
 .back-btn {
     position: absolute;
     top: 20px;
@@ -102,7 +101,7 @@ body {
     height: 24px;
 }
 
-/* Background */
+
 .BackTeacherPage {
     position: fixed;
     width: 100%;
@@ -113,35 +112,35 @@ body {
     overflow: hidden;
 }
 
-/* Background elements */
+
 .wave {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: auto;
 }
-/* Background */
+
 .BackTeacherPage {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Set background behind other content */
+    z-index: 1; 
     top: 0;
     left: 0;
     overflow: hidden;
 }
 
-/* Book */
+
 .book {
     position: absolute;
-    top: 10%;  /* Move it closer to the top */
-    right: 5%; /* Position it closer to the right side */
-    width: 200px;  /* Increase the width to make the book bigger */
-    z-index: 3;  /* Ensure the book is above the background and profile card */
+    top: 10%; 
+    right: 5%; 
+    width: 200px;  
+    z-index: 3;  
     animation: float 3s ease-in-out infinite alternate;
 }
 
-/* Profile Wrapper */
+
 .profile-wrapper {
     display: flex;
     justify-content: center;
@@ -149,7 +148,7 @@ body {
     padding: 40px;
     min-height: 100%;
     position: relative;
-    z-index: 2; /* Keep the profile card behind the book */
+    z-index: 2; 
     overflow: hidden;
 }
 
@@ -173,7 +172,7 @@ body {
     to { transform: translateY(-15px); }
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .profile-card {
         flex-direction: column;

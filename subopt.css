@@ -1,7 +1,7 @@
 .submech{
 height: 100vh;
   background: url('pictures/suboptbg.svg') no-repeat center center;
-  background-size: cover; /* makes image cover the whole section */
+  background-size: cover; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,7 +10,7 @@ height: 100vh;
   position: relative;
 }
 
-/* Toggle switch styles */
+
 .switch {
   position: absolute;
   top: 51%;

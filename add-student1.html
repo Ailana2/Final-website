@@ -54,5 +54,32 @@
     </div>
   </div>
   <script src="add-student1.js"></script>
+  <canvas id="confetti"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  <script>
+    const form = document.getElementById('authForm');
+    const jsConfetti = new JSConfetti();
+
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) return; 
+      e.preventDefault(); 
+      jsConfetti.addConfetti({
+        emojis: ['🎉', '✨', '💥', '💐', '🍀'],
+      }).then(() => form.submit());
+    });
+  </script>
+
+  <style>
+    canvas#confetti {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      pointer-events: none;
+    }
+  </style>
+
 </body>
 </html>
